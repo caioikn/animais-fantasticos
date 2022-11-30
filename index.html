@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Animais Fantásticos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+  <script>
+    document.documentElement.className += ' js'
+  </script>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="grid-container">
+    <nav class="menu" data-menu="suave">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
+        <li><a href="#animais">Animais</a></li>
+        <li data-dropdown>
+          <a href="sobre.html">Sobre</a>
+
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A Empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="socios.html">Sócios</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#numeros">Números</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a data-modal="abrir" href="login.html">Login →</a></li>
+      </ul>
+    </nav>
+
+    <section class="grid-section animais" data-anime="scroll" id="animais">
+      <h1 class="titulo">Animais Fantásticos</h1>
+
+      <ul class="animais-lista" data-tab="menu">
+        <li>
+          <img src="./img/imagem1.jpg" alt="">
+        </li>
+        <li>
+          <img src="./img/imagem2.jpg" alt="">
+        </li>
+        <li>
+          <img src="./img/imagem3.jpg" alt="">
+        </li>
+        <li>
+          <img src="./img/imagem4.jpg" alt="">
+        </li>
+        <li>
+          <img src="./img/imagem5.jpg" alt="">
+        </li>
+        <li>
+          <img src="./img/imagem6.jpg" alt="">
+        </li>
+      </ul>
+
+      <div class="animais-descricao" data-tab="content">
+        <section data-anime='show-right'>
+          <h2>Raposa</h2>
+          <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae.</p>
+          <p>Doze espécies pertencem ao grupo monofilético de "raposas verdadeiras" do gênero Vulpes.</p>
+          <p>As raposas vivem em todos os continentes, exceto a Antártida.</p>
+        </section>
+
+        <section data-anime='show-right'>
+          <h2>Esquilo</h2>
+          <p>Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como Sciuridae.</p>
+          <p>No Brasil, são também conhecidos como serelepe, caxinguelê, caxinxe, quatimirim, quatipuru, agutipuru ou acutipuru.</p>
+          <p>Na Galiza e em algumas zonas de Portugal, também são conhecido por esquio.</p>
+        </section>
+
+        <section data-anime='show-down'>
+          <h2>Urso</h2>
+          <p>Os Ursos (latim científico: Ursidae) constituem uma família de mamíferos plantígrados, geralmente de grande porte, contendo os ursos e os pandas.</p>
+          <p>Algumas características comuns dos ursos são pelagem espessa, rabo curto, o olfato desenvolvido e as garras não retráteis.</p>
+          <p>A maioria dos ursos costumam preparar-se para hibernar durante o inverno, comendo grandes quantidades de comida antes de entrar em uma toca para o período de sono profundo.</p>
+          <p>Os ursos existem em todos os continentes, em exceção na África, embora algumas fontes afirmem terem avistado o Urso nandi, mas sem comprovarem a sua existência.</p>
+        </section>
+
+        <section data-anime='show-down'>
+          <h2>Lobo</h2>
+          <p>O lobo (também chamado de lobo-cinzento; nome científico: Canis lupus) é uma espécie de mamífero canídeo do gênero Canis.</p>
+          <p>É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.</p>
+          <p>É o maior membro remanescente selvagem da família canidae.</p>
+        </section>
+
+        <section data-anime='show-right'>
+          <h2>Macaco</h2>
+          <p>Macaco é um termo de origem africana (provavelmente do banto makako) utilizado como designação comum a todas as espécies de símios ou primatas antropoides.</p>
+          <p>A designação mico se origina, segundo o Dicionário Aurélio, do caraíba (karib) continental.</p>
+          <p>O termo sagui se origina do tupi antigo sagûi e também designa os macacos calitriquídeos de pequeno porte.</p>
+          <p>Ainda segundo Cunha, o termo símio, que também designa os macacos (tendo sido registrado no português dos séculos XVI e XVII), vem do latim simius, de simus, "que tem o nariz chato".</p>
+        </section>
+
+        <section data-anime='show-right'>
+          <h2>Leão</h2>
+          <p>O leão [feminino: leoa] (nome científico: Panthera leo) é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae.</p>
+          <p>A pelagem é unicolor de coloração castanha, e os machos apresentam uma juba característica. </p>
+          <p>A espécie está classificada como "vulnerável" pela União Internacional para a Conservação da Natureza e dos Recursos Naturais (IUCN), e sofreu um declínio populacional de 30-50% nas últimas duas décadas no território africano.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="grid-section faq" data-anime="scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+
+      <dl class="faq-lista" data-anime="accordion">
+        <dt>Qual a idade dos animais?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ducimus accusamus eos, ratione perferendis illum unde deserunt necessitatibus quibusdam ipsum veniam ullam ea possimus quidem sapiente inventore est aliquam! Quas facilis architecto at tempora necessitatibus, itaque minus ducimus vitae veniam quod, ipsum quis laborum in nam assumenda tempore, labore suscipit.</dd>
+
+        <dt>Eles são fantásticos?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quis debitis aperiam obcaecati minus repudiandae quibusdam est odit consectetur perspiciatis a non maxime, saepe vel.</dd>
+
+        <dt>Qual a diferença?</dt>
+        <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque autem eveniet dolore dolor cupiditate eius mollitia, quia nobis similique libero impedit quasi, et quod culpa aspernatur? Perferendis, temporibus. Natus eveniet fuga aperiam veniam quasi assumenda.</dd>
+
+        <dt>Como proteger?</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magnam tenetur consectetur et accusantium nesciunt placeat delectus optio recusandae qui? Suscipit fuga obcaecati cupiditate, quam consectetur exercitationem nulla ad ipsum aliquid, nam quibusdam accusantium dicta inventore architecto molestiae tempore quasi!</dd>
+      </dl>
+    </section>
+
+    <section class="grid-section numeros" data-anime="scroll" id="numeros">
+      <h1 class="titulo">Números</h1>
+
+      <div class="numeros-grid">
+      </div>
+    </section>
+
+    <section class="grid-section contato" data-anime="scroll" id="contato">
+      <h1 class="titulo">Contato</h1>
+
+      <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
+        <img src="./img/mapa.png">
+      </div>
+
+      <ul class="dados">
+        <li>caio@email.com</li>
+        <li>+55 (11)99999-9999</li>
+        <li>Rua Ali Perto, nº 45</li>
+        <li>São Paulo - SP</li>
+        <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar.</li>
+        <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+      </ul>
+    </section>
+
+    <footer class="copy">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="./main.js/main.js"></script>
+</body>
+
+</html>
